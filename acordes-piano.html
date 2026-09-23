@@ -156,6 +156,28 @@
     font-size:14.5px;
   }
 
+  .minor-divider{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin:34px 0 18px;
+    color:var(--ink);
+  }
+  .minor-divider::before,
+  .minor-divider::after{
+    content:"";
+    height:1px;
+    background:var(--line-strong);
+    flex:1;
+  }
+  .minor-divider span{
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    font-size:12px;
+    font-weight:500;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+
   /* ---------- rejilla de acordes ---------- */
   .grid{
     display:grid;
