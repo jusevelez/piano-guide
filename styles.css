@@ -599,3 +599,4 @@
     border:1px dashed var(--line-strong);
     border-radius:12px;
   }
+  .muted{ color:var(--ink-faint); font-family:"IBM Plex Sans", sans-serif; font-size:12.5px; }

@@ -1,0 +1,150 @@
+    4.58s ( 0.7s)  C         bajo C    arriba G C E
+    5.42s ( 2.2s)  C/G       bajo G    arriba C E
+    7.67s ( 0.7s)  Em/B      bajo B    arriba G B E
+    8.42s ( 2.2s)  Em/G      bajo G    arriba B E
+   10.75s ( 0.6s)  Am        bajo A    arriba A C E
+   11.50s ( 2.1s)  Am        bajo A    arriba C E
+   13.75s ( 0.7s)  C/G       bajo G    arriba G C E
+   14.50s ( 2.2s)  C/G       bajo G    arriba C E
+   16.83s ( 0.6s)  F         bajo F    arriba C F A
+   17.58s ( 1.8s)  F/C       bajo C    arriba F A
+   19.42s ( 0.2s)  C         bajo C    arriba 
+   19.75s ( 0.7s)  F         bajo F    arriba C F A
+   20.58s ( 2.2s)  F/C       bajo C    arriba F A
+   22.83s ( 0.7s)  C         bajo C    arriba G C E
+   23.67s ( 2.1s)  C/G       bajo G    arriba C E
+   25.92s ( 1.3s)  G C F     bajo G    arriba C F
+   27.42s ( 1.4s)  G D E     bajo G    arriba D E
+   28.92s ( 0.7s)  C         bajo C    arriba G C E
+   29.67s ( 2.2s)  C/G       bajo G    arriba C E
+   32.00s ( 0.6s)  Em/B      bajo B    arriba G B E
+   32.75s ( 2.2s)  Em/G      bajo G    arriba B E
+   35.00s ( 0.7s)  Am        bajo A    arriba A C E
+   35.75s ( 2.2s)  Am        bajo A    arriba C E
+   38.08s ( 0.6s)  C/G       bajo G    arriba G C E
+   38.83s ( 2.1s)  C/G       bajo G    arriba C E
+   41.08s ( 0.7s)  F         bajo F    arriba C F A
+   41.83s ( 1.8s)  F/C       bajo C    arriba F A
+   43.67s ( 0.3s)  C         bajo C    arriba 
+   44.08s ( 0.7s)  F         bajo F    arriba C F A
+   44.92s ( 2.2s)  F/C       bajo C    arriba F A
+   47.17s ( 0.7s)  C         bajo C    arriba G C E
+   47.92s ( 2.2s)  C/G       bajo G    arriba C E
+   50.17s ( 1.4s)  G C F     bajo G    arriba C F
+   51.75s ( 1.3s)  G D E     bajo G    arriba D E
+   53.25s ( 0.7s)  C         bajo C    arriba G C E
+   54.00s ( 2.2s)  C/G       bajo G    arriba C E
+   56.33s ( 0.6s)  Em/B      bajo B    arriba G B E
+   57.00s ( 2.2s)  Em/G      bajo G    arriba B E
+   59.33s ( 0.6s)  Am        bajo A    arriba A C E
+   60.08s ( 2.2s)  Am        bajo A    arriba C E
+   62.33s ( 0.7s)  C/G       bajo G    arriba G C E
+   63.17s ( 2.1s)  C/G       bajo G    arriba C E
+   65.42s ( 0.6s)  F         bajo F    arriba C F A
+   66.17s ( 1.8s)  F/C       bajo C    arriba F A
+   68.00s ( 0.3s)  C         bajo C    arriba 
+   68.42s ( 0.7s)  F         bajo F    arriba C F A
+   69.17s ( 2.2s)  F/C       bajo C    arriba F A
+   71.50s ( 0.6s)  C         bajo C    arriba G C E
+   72.25s ( 2.2s)  C/G       bajo G    arriba C E
+   74.50s ( 1.4s)  G C F     bajo G    arriba C F
+   76.00s ( 1.4s)  G D E     bajo G    arriba D E
+   77.58s ( 0.6s)  C         bajo C    arriba G C E
+   78.33s ( 2.1s)  C/G       bajo G    arriba C E
+   80.58s ( 0.7s)  Em/B      bajo B    arriba G B E
+   81.33s ( 2.2s)  Em/G      bajo G    arriba B E
+   83.67s ( 0.6s)  Am        bajo A    arriba A C E
+   84.42s ( 2.2s)  Am        bajo A    arriba C E
+   86.67s ( 0.6s)  C/G       bajo G    arriba G C E
+   87.42s ( 2.2s)  C/G       bajo G    arriba C E
+   89.67s ( 0.7s)  F         bajo F    arriba C F A
+   90.50s ( 1.8s)  F/C       bajo C    arriba F A
+   92.33s ( 0.2s)  C         bajo C    arriba 
+   92.67s ( 0.8s)  F         bajo F    arriba C F A
+   93.50s ( 2.2s)  F/C       bajo C    arriba F A
+   95.75s ( 0.7s)  C         bajo C    arriba G C E
+   96.50s ( 2.2s)  C/G       bajo G    arriba C E
+   98.83s ( 1.4s)  G C F     bajo G    arriba C F
+  100.33s ( 1.4s)  G D E     bajo G    arriba D E
+  101.83s ( 2.9s)  F+C       bajo F    arriba C F C
+  104.92s ( 2.9s)  C+G       bajo C    arriba G C
+  107.92s ( 2.9s)  F+C       bajo F    arriba C F C
+  111.00s ( 2.9s)  C+G       bajo C    arriba G C
+  114.17s ( 2.8s)  D#+C      bajo D#   arriba C D#
+  117.00s ( 0.2s)  F+D       bajo F    arriba D F
+  117.33s ( 0.3s)  A#/F      bajo F    arriba A# D F
+  117.83s ( 2.1s)  F+D       bajo F    arriba D F
+  120.08s ( 5.9s)  G/D       bajo D    arriba G B D
+  126.08s ( 3.0s)  F+C       bajo F    arriba C F C
+  129.17s ( 2.9s)  C+G       bajo C    arriba G C
+  132.25s ( 2.9s)  F+C       bajo F    arriba C F C
+  135.25s ( 2.9s)  C+G       bajo C    arriba G C
+  138.33s ( 1.8s)  G#        bajo G#   arriba C D#
+  140.17s ( 0.8s)  G#+C      bajo G#   arriba C
+  141.33s ( 2.6s)  F+D       bajo F    arriba D F
+  144.00s ( 0.2s)  A#/F      bajo F    arriba A# D F
+  144.42s ( 5.9s)  G/D       bajo D    arriba G B D
+  150.50s ( 2.9s)  C/G       bajo G    arriba C E
+  153.50s ( 2.9s)  Em/G      bajo G    arriba B E
+  156.50s ( 2.9s)  Am        bajo A    arriba C E
+  159.58s ( 2.9s)  C/G       bajo G    arriba C E
+  162.67s ( 0.6s)  F         bajo F    arriba C F A
+  163.33s ( 1.8s)  F/C       bajo C    arriba F A
+  165.25s ( 0.2s)  C         bajo C    arriba 
+  165.58s ( 0.7s)  F         bajo F    arriba C F A
+  166.42s ( 2.2s)  F/C       bajo C    arriba F A
+  168.67s ( 0.7s)  C         bajo C    arriba G C E
+  169.50s ( 2.1s)  C/G       bajo G    arriba C E
+  171.75s ( 1.3s)  G C F     bajo G    arriba C F
+  173.25s ( 1.4s)  G D E     bajo G    arriba D E
+  174.75s ( 0.7s)  C         bajo C    arriba G C E
+  175.50s ( 2.2s)  C/G       bajo G    arriba C E
+  177.83s ( 0.6s)  Em/B      bajo B    arriba G B E
+  178.58s ( 2.2s)  Em/G      bajo G    arriba B E
+  180.83s ( 0.7s)  Am        bajo A    arriba A C E
+  181.58s ( 2.2s)  Am        bajo A    arriba C E
+  183.92s ( 0.6s)  C/G       bajo G    arriba G C E
+  184.67s ( 2.1s)  C/G       bajo G    arriba C E
+  186.92s ( 0.7s)  F         bajo F    arriba C F A
+  187.67s ( 1.8s)  F/C       bajo C    arriba F A
+  189.50s ( 0.3s)  C         bajo C    arriba 
+  189.92s ( 0.7s)  F         bajo F    arriba C F A
+  190.75s ( 2.2s)  F/C       bajo C    arriba F A
+  193.00s ( 0.6s)  C         bajo C    arriba G C E
+  193.75s ( 2.2s)  C/G       bajo G    arriba C E
+  196.00s ( 1.4s)  G C F     bajo G    arriba C F
+  197.50s ( 1.4s)  G D E     bajo G    arriba D E
+  199.08s ( 0.7s)  C         bajo C    arriba G C E
+  199.83s ( 2.2s)  C/G       bajo G    arriba C E
+  202.08s ( 0.7s)  Em/B      bajo B    arriba G B E
+  202.83s ( 2.2s)  Em/G      bajo G    arriba B E
+  205.17s ( 0.6s)  Am        bajo A    arriba A C E
+  205.92s ( 2.2s)  Am        bajo A    arriba C E
+  208.17s ( 0.7s)  C/G       bajo G    arriba G C E
+  208.92s ( 2.2s)  C/G       bajo G    arriba C E
+  211.25s ( 0.6s)  F         bajo F    arriba C F A
+  212.00s ( 1.8s)  F/C       bajo C    arriba F A
+  213.83s ( 0.3s)  C         bajo C    arriba 
+  214.25s ( 0.7s)  F         bajo F    arriba C F A
+  215.00s ( 2.2s)  F/C       bajo C    arriba F A
+  217.33s ( 0.6s)  C         bajo C    arriba G C E
+  218.08s ( 2.2s)  C/G       bajo G    arriba C E
+  220.33s ( 1.4s)  G C F     bajo G    arriba C F
+  221.83s ( 1.4s)  G D E     bajo G    arriba D E
+  223.33s ( 0.7s)  C         bajo C    arriba G C E
+  224.17s ( 2.1s)  C/G       bajo G    arriba C E
+  226.42s ( 0.7s)  Em/B      bajo B    arriba G B E
+  227.17s ( 2.2s)  Em/G      bajo G    arriba B E
+  229.42s ( 0.7s)  Am        bajo A    arriba A C E
+  230.17s ( 2.2s)  Am        bajo A    arriba C E
+  232.50s ( 0.6s)  C/G       bajo G    arriba G C E
+  233.25s ( 2.2s)  C/G       bajo G    arriba C E
+  235.50s ( 0.7s)  F         bajo F    arriba C F A
+  236.33s ( 1.8s)  F/C       bajo C    arriba F A
+  238.17s ( 0.2s)  C         bajo C    arriba 
+  238.50s ( 0.8s)  F         bajo F    arriba C F A
+  239.33s ( 2.2s)  F/C       bajo C    arriba F A
+  241.58s ( 0.7s)  C         bajo C    arriba G C E
+  242.33s ( 2.2s)  C/G       bajo G    arriba C E
+  244.67s ( 1.4s)  G C F     bajo G    arriba C F
+  246.17s ( 1.4s)  G D E     bajo G    arriba D E

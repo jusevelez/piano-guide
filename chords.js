@@ -34,10 +34,12 @@ var MIN = [
 var WHITE = [0,2,4,5,7,9,11], BLACK = [1,3,6,8,10];
 var W = 24, H = 76, BW = 13, BH = 48;
 
-function keyboard(on, octaves){
+function keyboard(on, octaves, sinFundamental){
   var svg = '', i, oct, st, x, wi = 0, marks = {};
   var OCT = octaves || 2;
-  on.forEach(function(s, idx){ marks[s] = idx === 0 ? 'root' : 'on'; });
+  on.forEach(function(s, idx){
+    marks[s] = (idx === 0 && !sinFundamental) ? 'root' : 'on';
+  });
   // blancas
   for(oct = 0; oct < OCT; oct++){
     for(i = 0; i < 7; i++){

@@ -34,7 +34,7 @@
       <span>Technical Ecstasy</span>
       <span>Bill Ward (letra, voz y piano)</span>
     </div>
-    <p class="lede">La balada de piano del <i>Technical Ecstasy</i>: Bill Ward al micrófono y el teclado llevando la canción entera. Aquí irá el fragmento que practicas, posición por posición, con las teclas exactas de cada mano.</p>
+    <p class="lede">La balada de piano del <i>Technical Ecstasy</i>: Bill Ward al micrófono y el teclado llevando la canción entera. Estos son los compases del verso, leídos del vídeo del tutorial, con las teclas exactas de cada mano.</p>
     <div class="legend">
       <span><i class="dot r"></i> Mano izquierda (el bajo)</span>
       <span><i class="dot"></i> Mano derecha · tecla blanca</span>
@@ -44,15 +44,24 @@
 
   <section>
     <div class="sec-head">
-      <h2>Lo que llevas practicando</h2>
+      <h2>El verso</h2>
+      <span class="formula">bajo: Do · Si · La · Sol</span>
     </div>
-    <p class="sec-note">Todavía sin acordes: los que había estaban mal y los quité. En cuanto me pases los correctos, cada posición aparece aquí con su teclado, la nota del bajo y la tríada de la derecha.</p>
+    <p class="sec-note">Ocho compases que dan vueltas durante casi toda la canción. La mano izquierda toca <b>una nota sola</b> al empezar cada compás y la suelta; la derecha sostiene <b>tres notas</b> hasta el compás siguiente. Lo que se mueve es el bajo, bajando <b>Do → Si → La → Sol</b>; la derecha casi no cambia.</p>
 
     <div class="grid two" id="steps"></div>
   </section>
 
+  <section>
+    <div class="sec-head"><h2>Cómo encaja</h2></div>
+    <div class="part">
+      <h3>El compás 8 es el giro</h3>
+      <p class="sec-note" style="margin:0">Los compases 1 a 7 son un bloque: el bajo baja <b>Do · Si · La · Sol</b>, sube al <b>Fa</b> (una octava por encima, no por debajo) y vuelve al <b>Do</b>. En el octavo la izquierda descansa y la derecha sola hace el giro que devuelve al principio: <b>Sol–Do–Fa</b> y luego <b>Sol–Re–Mi</b>. Cada compás dura unos 3 segundos al tempo del tutorial.</p>
+    </div>
+  </section>
+
   <footer>
-    It’s Alright · Bill Ward · del álbum Technical Ecstasy (Black Sabbath, 1976).
+    It’s Alright · Bill Ward · del álbum Technical Ecstasy (Black Sabbath, 1976). Acordes leídos del vídeo del tutorial con tools-read-synthesia.py.
   </footer>
 </div>
 
@@ -63,21 +72,36 @@
   // Cada paso: bajo y mano derecha en semitonos sobre un teclado de 3 octavas
   // (octava baja = mano izquierda, las dos de arriba = mano derecha).
   // Pendiente: rellenar con los acordes correctos.
-  var STEPS = [];
+  var STEPS = [
+    { n: "1", name: "C",       es: "Do mayor",                    bass: 12,   rh: [19, 24, 28] },
+    { n: "2", name: "Em/B",    es: "Mi menor con bajo en Si",     bass: 11,   rh: [19, 23, 28] },
+    { n: "3", name: "Am",      es: "La menor",                    bass: 9,    rh: [21, 24, 28] },
+    { n: "4", name: "C/G",     es: "Do mayor con bajo en Sol",    bass: 7,    rh: [19, 24, 28] },
+    { n: "5", name: "F",       es: "Fa mayor",                    bass: 17,   rh: [24, 29, 33] },
+    { n: "6", name: "F",       es: "Fa mayor otra vez",           bass: 17,   rh: [24, 29, 33] },
+    { n: "7", name: "C",       es: "Do mayor",                    bass: 12,   rh: [19, 24, 28] },
+    { n: "8a", name: "G7sus4", es: "Sobre Sol, sin tercera",      bass: null, rh: [19, 24, 29] },
+    { n: "8b", name: "G6",     es: "Sobre Sol, resuelve",         bass: null, rh: [19, 26, 28] }
+  ];
 
   function en(st){ return st.map(Acordes.nameEn).join(' – '); }
   function es(st){ return st.map(Acordes.nameEs).join(' – '); }
 
-  function card(s, i){
+  function card(s){
+    var izq = s.bass === null
+      ? '<span class="muted">no toca · sigue sonando el Sol</span>'
+      : '<span class="r1">' + Acordes.nameEn(s.bass) + '</span> · ' + Acordes.nameEs(s.bass);
+    var keys = (s.bass === null ? [] : [s.bass]).concat(s.rh);
     return '<article class="chord">' +
       '<div class="chord-top">' +
-        '<div class="sym"><span class="step-n">' + (i + 1) + '</span>' + s.name + '</div>' +
-        '<div class="es"><strong>' + s.es + '</strong>bajo en ' + Acordes.nameEs(s.bass) + '</div>' +
+        '<div class="sym"><span class="step-n">' + s.n + '</span>' + s.name + '</div>' +
+        '<div class="es"><strong>' + s.es + '</strong>' +
+          (s.bass === null ? 'solo mano derecha' : 'bajo en ' + Acordes.nameEs(s.bass)) +
+        '</div>' +
       '</div>' +
-      Acordes.keyboard([s.bass].concat(s.rh), 3) +
+      Acordes.keyboard(keys, 3, s.bass === null) +
       '<dl class="rows">' +
-        '<div class="row"><dt>Izquierda</dt><dd><span class="r1">' + Acordes.nameEn(s.bass) +
-          '</span> · ' + Acordes.nameEs(s.bass) + '</dd></div>' +
+        '<div class="row"><dt>Izquierda</dt><dd>' + izq + '</dd></div>' +
         '<div class="row"><dt>Derecha</dt><dd>' + en(s.rh) + '</dd></div>' +
         '<div class="row"><dt>Español</dt><dd>' + es(s.rh) + '</dd></div>' +
       '</dl>' +
