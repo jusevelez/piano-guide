@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>It’s Alright · Acordes al Teclado</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="bar">
+    <a class="brand" href="acordes-piano.html">Acordes al Teclado</a>
+    <ul class="nav-list">
+      <li><a class="nav-link" href="acordes-piano.html">Todos los acordes</a></li>
+      <li class="drop">
+        <button type="button" aria-expanded="false" aria-controls="menu-canciones">Canciones <i class="caret"></i></button>
+        <ul class="menu" id="menu-canciones">
+          <li><a href="its-alright.html" aria-current="page">It&rsquo;s Alright <small>Black Sabbath</small></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <header class="hero song-head">
+    <p class="eyebrow">Canciones · progresión de acordes</p>
+    <h1>It’s <em>Alright</em></h1>
+    <div class="meta">
+      <span><b>Black Sabbath</b> · 1976</span>
+      <span>Technical Ecstasy</span>
+      <span>Bill Ward (letra, voz y piano)</span>
+    </div>
+    <p class="lede">La balada de piano del <i>Technical Ecstasy</i>: Bill Ward al micrófono y el teclado llevando la canción entera. Aquí está el fragmento que llevas practicando, posición por posición, con las teclas exactas de cada mano.</p>
+    <div class="legend">
+      <span><i class="dot r"></i> Mano izquierda (el bajo)</span>
+      <span><i class="dot"></i> Mano derecha · tecla blanca</span>
+      <span><i class="dot b"></i> Mano derecha · tecla negra</span>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <h2>Lo que llevas practicando</h2>
+      <span class="formula" id="bassline">bajo: Do · Si · La · Sol · Fa</span>
+    </div>
+    <p class="sec-note">Siete posiciones, leídas de tus capturas de Synthesia, en orden y todas a la vista. Todas tienen la misma forma: <b>una nota sola en la mano izquierda</b> y <b>tres notas juntas en la derecha</b>. Lo que se mueve de verdad es el bajo, que va bajando escalón por escalón.</p>
+
+    <div class="grid two" id="steps"></div>
+
+    <div class="part" style="margin-top:22px">
+      <h3>La línea del bajo</h3>
+      <p class="sec-note" style="margin:0">Si te trabas, practica primero solo la mano izquierda: <b>Do → Si → La → Sol → Fa → Do</b>. Son cinco teclas blancas seguidas bajando. Cuando la tengas de memoria, la derecha casi no se mueve: entre las posiciones 1 y 4 toca siempre <b>Sol – Do – Mi</b>.</p>
+    </div>
+  </section>
+
+  <footer>
+    It’s Alright · Bill Ward · del álbum Technical Ecstasy (Black Sabbath, 1976). Posiciones leídas de tus propias capturas de Synthesia: es el fragmento que practicas, no la canción completa.
+  </footer>
+</div>
+
+<script src="chords.js"></script>
+<script src="nav.js"></script>
+<script>
+(function(){
+  // Cada paso: bajo y mano derecha en semitonos sobre un teclado de 3 octavas
+  // (octava baja = mano izquierda, las dos de arriba = mano derecha).
+  var STEPS = [
+    { name: "C",    es: "Do mayor",                 bass: 12, rh: [19, 24, 28] },
+    { name: "Em/B", es: "Mi menor con bajo en Si",  bass: 11, rh: [19, 23, 28] },
+    { name: "Am",   es: "La menor",                 bass: 9,  rh: [21, 24, 28] },
+    { name: "C/G",  es: "Do mayor con bajo en Sol", bass: 7,  rh: [19, 24, 28] },
+    { name: "F",    es: "Fa mayor",                 bass: 5,  rh: [24, 29, 33] },
+    { name: "F/C",  es: "Fa mayor con bajo en Do",  bass: 12, rh: [24, 29, 33] },
+    { name: "C",    es: "Do mayor",                 bass: 12, rh: [19, 24, 28] }
+  ];
+
+  function en(st){ return st.map(Acordes.nameEn).join(' – '); }
+  function es(st){ return st.map(Acordes.nameEs).join(' – '); }
+
+  function card(s, i){
+    return '<article class="chord">' +
+      '<div class="chord-top">' +
+        '<div class="sym"><span class="step-n">' + (i + 1) + '</span>' + s.name + '</div>' +
+        '<div class="es"><strong>' + s.es + '</strong>bajo en ' + Acordes.nameEs(s.bass) + '</div>' +
+      '</div>' +
+      Acordes.keyboard([s.bass].concat(s.rh), 3) +
+      '<dl class="rows">' +
+        '<div class="row"><dt>Izquierda</dt><dd><span class="r1">' + Acordes.nameEn(s.bass) +
+          '</span> · ' + Acordes.nameEs(s.bass) + '</dd></div>' +
+        '<div class="row"><dt>Derecha</dt><dd>' + en(s.rh) + '</dd></div>' +
+        '<div class="row"><dt>Español</dt><dd>' + es(s.rh) + '</dd></div>' +
+      '</dl>' +
+      '</article>';
+  }
+
+  document.getElementById('steps').innerHTML = STEPS.map(card).join('');
+})();
+</script>
+</body>
+</html>
